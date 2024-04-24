@@ -4,9 +4,9 @@ import { ref, reactive, computed } from "vue";
 const header = ref("Shopping List App");
 const editing = ref(false);
 const items = ref([
-  { id: 1, label: "Crème hydratante", purchased: true, highPriority: false },
-  { id: 2, label: "SSBU", purchased: true, highPriority: false },
-  { id: 3, label: "Item 3", purchased: false, highPriority: true },
+  { id: 1, label: "Test item 1", purchased: true, highPriority: false },
+  { id: 2, label: "Test item 1", purchased: true, highPriority: true },
+  { id: 3, label: "Test item 1", purchased: false, highPriority: true },
 ]);
 const reversedItems = computed(() => [...items.value].reverse());
 const newItem = ref("");
